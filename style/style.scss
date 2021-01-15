@@ -263,8 +263,17 @@ footer{
         
     }
 
+    .links{
+        text-decoration: none;
+        font-weight: bolder;
+        color: white;
+        &:hover{
+            color: white;
+            transition: 0.2s ease;
+            text-decoration: none;
+        }
+    }
 @media only screen and(max-width:800px){
-    
     .main{
         background:url('../images/mobile/image-hero.jpg');
         background-position: center;

@@ -307,6 +307,19 @@ footer {
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/desktop/image-fisheye.jpg");
 }
 
+.links {
+  text-decoration: none;
+  font-weight: bolder;
+  color: white;
+}
+
+.links:hover {
+  color: white;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+  text-decoration: none;
+}
+
 @media only screen and (max-width: 800px) {
   .main {
     background: url("../images/mobile/image-hero.jpg");
