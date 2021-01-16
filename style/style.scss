@@ -62,6 +62,7 @@ html,body{
     box-sizing: border-box;
     scroll-behavior: smooth;
     overflow-x: hidden;
+    // transition: 0.2s all ease;
     // font-family: Josefin Sans;
 }
 .pointer{
@@ -186,9 +187,8 @@ html,body{
     // margin-left: 50px;
     // margin-right: 50px;
 }
-.collections>  .collection_card{
+.collections>.collection_card{
     height: inherit;
-    // background-image:url('../images/desktop/image-deep-earth.jpg');
     background-repeat: no-repeat;
     background-size: contain;
     width: 256px;
@@ -196,17 +196,28 @@ html,body{
     margin-top: 8vh;
     margin-left: auto;
     margin-right: auto;
+    cursor: pointer;
+    &:hover>.content{
+        height: inherit;
+        transition: 0.3s all ease-in-out;
+        background-color: white;
+        opacity: 0.7;
+        color: black;
+    }
+
 }
 .collections>.collection_card> .content{
     position: sticky;
     display: flex;
+    z-index: 3;
     flex-direction: column;
     justify-content: center;
-    height: 430px;
+    height: inherit;
     justify-content: flex-end;
     color: rgb(223, 223, 223);
     font-weight:lighter;
-    margin-left: 30px;
+    padding-left: 30px;
+    padding-bottom: 20px;
     font-size: 35px;
 }
 
@@ -225,6 +236,7 @@ footer{
 .foot1_1{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .copyright{
     color:$darkgray
@@ -273,7 +285,7 @@ footer{
             text-decoration: none;
         }
     }
-@media only screen and(max-width:800px){
+@media only screen and(max-width:1007px){
     .main{
         background:url('../images/mobile/image-hero.jpg');
         background-position: center;
@@ -401,7 +413,7 @@ footer{
         flex-direction: column;
         justify-content: center;
         // background-color: pink;
-        height: 140px;
+        height: inherit;
         justify-content: flex-end;
         color: rgb(223, 223, 223);
         font-weight:lighter;
