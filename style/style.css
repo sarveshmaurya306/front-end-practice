@@ -141,8 +141,8 @@ html, body {
   height: max-content;
   /* z-index: 2; */
   padding-left: 79px;
-  -webkit-transform: translate(-12vw, 0vh);
-          transform: translate(-12vw, 0vh);
+  -webkit-transform: translate(-12vw, 1px);
+          transform: translate(-12vw, 1px);
   padding-top: 79px;
   background: white;
 }
